@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Math Operations</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .result {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        #chartContainer {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Interactive Math Operations</h1>
+    
+    <div>
+        <label for="num1">Number 1:</label>
+        <input type="number" id="num1" value="0">
+    </div>
+    <div>
+        <label for="num2">Number 2:</label>
+        <input type="number" id="num2" value="0">
+    </div>
+    
+    <button onclick="performOperation('add')">Add</button>
+    <button onclick="performOperation('subtract')">Subtract</button>
+    <button onclick="performOperation('multiply')">Multiply</button>
+    <button onclick="performOperation('divide')">Divide</button>
+    
+    <div id="result" class="result"></div>
+    
+    <div id="chartContainer">
+        <canvas id="operationsChart"></canvas>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
